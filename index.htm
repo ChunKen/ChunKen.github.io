@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>羣KEN的世界</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" href="羣.jpg">
+</head>
+
+<body>
+	<!/*我的LOGO與TITLE*/>
+	<div id="myTitle" style="vertical-align: middle;">
+		羣<sup style="font-size: 20px;">KEN</sup>&#160&#160&#160&#160
+		<sup style="font-size: 20px; text-shadow: 2px 2px yellow; width: 200px">　~我叫羣，我是KEN，歡迎來到我的世界!!~</sup>
+	</div>
+	<!/*選項標籤*/>
+	<div id="choice">
+		<a href="page/首頁.htm" target="PDFcontent">&#160
+		首頁 
+		</a>
+		<a href="page/RPG Maker MV.htm" target="PDFcontent">&#160
+		RPG MAKER MV 教學 
+		</a>
+		<a href="page/我的歌曲.htm" target="PDFcontent">&#160
+		我的歌曲
+		</a>
+		<a href="page/我的動畫.htm" target="PDFcontent">&#160
+		我的動畫
+		</a>
+		<a href="page/English Tutorial.htm" target="PDFcontent">&#160
+		English Tutorial
+		</a>
+	</div>
+	<!/*內文(含目錄與實際內容)*/>
+	<div id="content">
+		<iframe src="page/首頁.htm" name="PDFcontent" 
+		width="1283.5px" height="500px" ></iframe>
+	</div>
+	<!bottom>
+	<div style="background-color: black;">
+    	<p style="text-align: center;color: white; display: inline; margin-left: 480px">
+		<a href="https://www.facebook.com/ChunKennoSEKAI/" target="_blank">
+			<img src="img/FB.png" width="100px">
+		</a>
+		<a href="https://www.youtube.com/channel/UCpBAufCZzvS1ORqBfDq0M3g/videos" target="_blank">
+			<img src="img/youtube.png" width="100px">
+		</a>
+		<img src="img/Gmail.png" width="100px" onclick="copyToClipboard('#email')" title="點擊複製信箱位址">		
+		</p>
+		<span style="color: white;float: right; text-align: right;">
+		<br><br>
+		<span>https://jackken123.github.io/</span> &#160&#160<br><br>
+		<span id="date" style=" color: white; top: 0px;"></span>		
+		</span>	
+
+				
+	</div>
+	
+
+<p id="email" style="display: none;">ChunKennoemail@gmail.com</p>
+
+<script>
+document.getElementById("date").innerHTML = Date() + " &#160";
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</body>
+</html>
