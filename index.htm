@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
 	<title>羣KEN的世界</title>
 	<link rel="stylesheet" href="index.css">
 	<link rel="icon" href="羣.jpg">
 </head>
 
 <body>
+<div style="background-color: #000000">
 	<!/*我的LOGO與TITLE*/>
-	<div id="myTitle" style="vertical-align: middle;">
+	<div id="myTitle" style="vertical-align: middle;width: 1290px;">
 		羣<sup style="font-size: 20px;">KEN</sup>&#160&#160&#160&#160
 		<sup style="font-size: 20px; text-shadow: 2px 2px yellow; width: 200px">　~我叫羣，我是KEN，歡迎來到我的世界!!~</sup>
 	</div>
 	<!/*選項標籤*/>
-	<div id="choice">
-		<a href="https://whzypqo0d0mzzc2lvhejoa-on.drv.tw/MyWeb/page/%E9%A6%96%E9%A0%81.htm" target="PDFcontent">&#160
-		首頁 
-		</a>
-		<a href="https://whzypqo0d0mzzc2lvhejoa-on.drv.tw/MyWeb/page/RPG%20Maker%20MV.htm" target="PDFcontent">&#160
-		RPG MAKER MV 教學 
-		</a>
-		<a href="https://whzypqo0d0mzzc2lvhejoa-on.drv.tw/MyWeb/page/%E6%88%91%E7%9A%84%E6%AD%8C%E6%9B%B2.htm" target="PDFcontent">&#160
-		我的歌曲
-		</a>
-		<a href="https://whzypqo0d0mzzc2lvhejoa-on.drv.tw/MyWeb/page/%E6%88%91%E7%9A%84%E5%8B%95%E7%95%AB.htm" target="PDFcontent">&#160
-		我的動畫
-		</a>
-		<a href="https://whzypqo0d0mzzc2lvhejoa-on.drv.tw/MyWeb/page/English%20Tutorial.htm" target="PDFcontent">&#160
-		English Tutorial
-		</a>
+	<div style="width: 1290px;background-color: #000000;" >
+		<div class="drop_down">
+			<a class="drop_down_bt" href="page/首頁.htm" 
+			target="PDFcontent">:HOME</a>
+		</div>
+		<div class="drop_down">
+			<a class="drop_down_bt">:RPG Maker</a>
+			<div class="drop_down_c">
+					<a href="page/RPG Maker MV.htm" 
+					target="PDFcontent">RPG MAKER MV 教學</a>
+					<a href="page/我的動畫.htm" 
+					target="PDFcontent">我的動畫
+					<a href="page/English Tutorial.htm" 
+					target="PDFcontent">English Tutorial</a>
+			</div>
+		</div>
+		<div class="drop_down">
+			<a class="drop_down_bt" href="page/我的歌曲.htm" 
+			target="PDFcontent">:我的歌曲</a>
+		</div>
 	</div>
 	<!/*內文(含目錄與實際內容)*/>
-	<div id="content">
-		<iframe src="https://whzypqo0d0mzzc2lvhejoa-on.drv.tw/MyWeb/page/%E9%A6%96%E9%A0%81.htm" name="PDFcontent" 
-		width="1283.5px" height="500px" ></iframe>
+	<div id="content" style="width: 1290px;">
+		<iframe src="page/首頁.htm" name="PDFcontent" 
+		width="1283.5px" height="500px" style="background-color: black;">
+		</iframe>
 	</div>
-	<!bottom>
-	<div style="background-color: black;">
-    	<p style="text-align: center;color: white; display: inline; margin-left: 480px">
-		<a href="https://www.facebook.com/ChunKennoSEKAI/" target="_blank">
-			<img src="img/FB.png" width="100px">
-		</a>
-		<a href="https://www.youtube.com/channel/UCpBAufCZzvS1ORqBfDq0M3g/videos" target="_blank">
-			<img src="img/youtube.png" width="100px">
-		</a>
-		<img src="img/Gmail.png" width="100px" onclick="copyToClipboard('#email')" title="點擊複製信箱位址">		
+	<!/*bottom*/>
+	<div class="bottom" style="background-color: #000000;width: 1290px;margin: 0px;">
+		<p style="text-align: center;color: white; display: inline; margin-left: 480px">
+			<a href="https://www.facebook.com/ChunKennoSEKAI/" target="_blank">
+				<img src="img/FB.png" width="100px">
+			</a>
+			<a href="https://www.youtube.com/channel/UCpBAufCZzvS1ORqBfDq0M3g/videos" target="_blank">
+				<img src="img/youtube.png" width="100px">
+			</a>
+			<img src="img/Gmail.png" width="100px" onclick="copyToClipboard('#email')" title="點擊複製信箱位址">		
 		</p>
 		<span style="color: white;float: right; text-align: right;">
-		<br><br>
-		<span>https://chunken.github.io/</span> &#160&#160<br><br>
-		<span id="date" style=" color: white; top: 0px;"></span>		
-		</span>	
-
-				
+			<br><br>
+			<span>https://chunken.github.io/</span> &#160&#160<br><br>
+			<span id="date" style=" color: white; top: 0px;"></span>		
+		</span>			
 	</div>
-	
+</div>
 
 <p id="email" style="display: none;">ChunKennoemail@gmail.com</p>
 
-<script>
-document.getElementById("date").innerHTML = Date() + " &#160";
 
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js"></script>
 
 </body>
 </html>
