@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>RPG Maker MV</title>
+	<link rel="stylesheet" type="text/css" href="RPG Maker MV.css">
+	<link rel="icon" href="羣.jpg">
+</head>
+<body>
+	<div id="content" style="top: 0px;">	
+		<!頁面左邊目錄>
+		<div style="width: 280px; background-color: black;">	
+			<b style="font-size: 26px; color: white;" id="_index">目錄</b>			
+			<div style="color: white; float: none;" class="box">
+			<div class="list" style="float: none;">☆插件教學</div>
+			<!插件教學目錄放置處>
+				<ul style="color: white;" class="showList">
+					<li>
+					<a href="#skipTitle" style="text-decoration: none; color: white;">
+					跳過標題畫面</a></li>
+					<li>
+					<a href="#overPass" style="text-decoration: none; color: white;">
+					橋</a></li>
+					<li>
+					<a href="#PHwarehouse" style="text-decoration: none; color: white;">
+					倉庫</a></li>
+					<li>
+					<a href="#eventMiniLabel" style="text-decoration: none; color: white;">
+					事件顯示文字</a></li>
+					<li>
+					<a href="#guestFollower" style="text-decoration: none; color: white;">
+					不戰鬥的跟隨者</a></li>
+					<li>
+					<a href="#characterMotion" style="text-decoration: none; color: white;">
+					腳色動作</a></li>
+					<li>
+					<a href="#eventTriggerLabels" style="text-decoration: none; color: white;">
+					其他按鍵觸發</a></li>
+					<li>
+					<a href="#waitOptions" style="text-decoration: none; color: white;">
+					強化等待</a></li>
+					<li>
+					<a href="#chronoEngine_1" style="text-decoration: none; color: white;">
+					即時戰鬥(1)[Chrono Engine]</a></li>
+					<li>
+					<a href="#chronoEngine_2" style="text-decoration: none; color: white;">
+					即時戰鬥(2)[Chrono Engine]</a></li>
+					<li>
+					<a href="#chronoEngine_3" style="text-decoration: none; color: white;">
+					即時戰鬥(3)[Chrono Engine]</a></li>
+					<li>
+					<a href="#chronoEngine_4" style="text-decoration: none; color: white;">
+					即時戰鬥(4)[Chrono Engine]</a></li>
+					<li>
+					<a href="#chronoEngine_5" style="text-decoration: none; color: white;">
+					即時戰鬥(5)[Chrono Engine]</a></li>
+					<li>
+					<a href="#chronoEngine_6" style="text-decoration: none; color: white;">
+					即時戰鬥(6)[Chrono Engine]</a></li>
+					<li>
+					<a href="#chronoEngine_7" style="text-decoration: none; color: white;">
+					即時戰鬥(7)[Chrono Engine]</a></li>
+				</ul>	
+
+			</div>
+
+			<div style="color: white; float: none;" class="box">			
+			<div class="list" style="float: none;">☆事件教學</div>
+			<!事件教學目錄放置處>
+				<ul style="color: white;" class="showList">
+					<li>
+					<a href="#showText_event" style="text-decoration: none; color: white;">
+					顯示文字</a></li>
+					<li>
+					<a href="#showChoise_event" style="text-decoration: none; color: white;">
+					顯示選擇</a></li>
+					<li>
+					<a href="#inputNumber_event" style="text-decoration: none; color: white;">
+					輸入數字</a></li>
+					<li>
+					<a href="#selectChoice_event" style="text-decoration: none; color: white;">
+					選擇項目</a></li>
+					<li>
+					<a href="#showRollingText_event" style="text-decoration: none; color: white;">
+					顯示滾動文字</a></li>
+					<li>
+					<a href="#switch_selfswitch_event" style="text-decoration: none; color: white;">
+					控制開關&自開關</a></li>
+					<li>
+					<a href="#variable_event" style="text-decoration: none; color: white;">
+					控制變數</a></li>
+					<li>
+					<a href="#timer_event" style="text-decoration: none; color: white;">
+					控制定時器</a></li>
+					<li>
+					<a href="#branch_event" style="text-decoration: none; color: white;">
+					條件分支</a></li>
+					<li>
+					<a href="#loop_event" style="text-decoration: none; color: white;">
+					迴圈</a></li>
+				</ul>	
+			</div>	
+
+			<div style="color: white; float: none;" class="box">			
+			<div class="list" style="float: none;">☆腳本處理事件教學</div>
+			<!腳本處理事件教學目錄放置處>
+				<ul style="color: white;" class="showList">
+					<li>
+					<a href="#showText_script" style="text-decoration: none; color: white;">
+					顯示文字</a></li>
+					<li>
+					<a href="#showChoice_script" style="text-decoration: none; color: white;">
+					顯示選擇</a></li>
+					<li>
+					<a href="#inputNumber_script" style="text-decoration: none; color: white;">
+					輸入數字</a></li>
+					<li>
+					<a href="#setChoice_script" style="text-decoration: none; color: white;">
+					選擇項目</a></li>
+					<li>
+					<a href="#showRollingText_script" style="text-decoration: none; color: white;">
+					顯示滾動文字</a></li>
+
+				</ul>	
+			</div>	
+		</div>	
+
+		<!頁面右邊內容>
+		<div style="width: 980px; border: 1px solid black; background-color: white;">			
+			<center>			
+				<b style="font-size: 30px">RPG Maker MV 教學</b><br>
+				<br>				
+			</center>
+			
+
+			<center style="font-size: 26px">☆插件教學<br>
+					<div style="float: none;" id="skipTitle"><br>跳過標題畫面<br>
+						<object data="https://www.youtube.com/v/dNeehqmcgf0"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="overPass"><br>橋<br>
+						<object data="https://www.youtube.com/v/roPVhx--e-Y"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="PHwarehouse"><br>倉庫<br>
+						<object data="https://www.youtube.com/v/0yBbbn6Kckg"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="eventMiniLabel"><br>事件顯示文字<br>
+						<object data="https://www.youtube.com/v/Vv0Iy7HE5XY"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="guestFollower"><br>不戰鬥的跟隨者<br>
+						<object data="https://www.youtube.com/v/QkBNERk1xd8"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="characterMotion"><br>腳色動作<br>
+						<object data="https://www.youtube.com/v/-Oe66j2N730"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="eventTriggerLabels"><br>其他按鍵觸發<br>
+						<object data="https://www.youtube.com/v/cVO-gsOww84"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="waitOptions"><br>強化等待<br>
+						<object data="https://www.youtube.com/v/56iQOR9KKlM"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="chronoEngine_1">
+					<br>即時戰鬥(1)[Chrono Engine]<br>
+						<object data="https://www.youtube.com/v/TJVnLX8TuBE"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/Chrono Engine(1).htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 chrono Engine基本架構</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="chronoEngine_2">
+					<br>即時戰鬥(2)[Chrono Engine]<br>
+						<object data="https://www.youtube.com/v/yXv8nxMZ3kE"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/Chrono Engine(2).htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 本次chrono Engine使用方法</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="chronoEngine_3">
+					<br>即時戰鬥(3)[Chrono Engine]<br>
+						<object data="https://www.youtube.com/v/OoFlFnk-gW4"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/Chrono Engine(3).htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 本次chrono Engine使用方法</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="chronoEngine_4">
+					<br>即時戰鬥(4)[Chrono Engine]<br>
+						<object data="https://www.youtube.com/v/tU0UN0SrIHM"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/Chrono Engine(4).htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 本次chrono Engine使用方法</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="chronoEngine_5">
+					<br>即時戰鬥(5)[Chrono Engine]<br>
+						<object data="https://www.youtube.com/v/SLpHaXN34gc"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/Chrono Engine(5).htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 本次chrono Engine使用方法</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="chronoEngine_6">
+					<br>即時戰鬥(6)[Chrono Engine]<br>
+						<object data="https://www.youtube.com/v/rUAG9IQOpEc"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/Chrono Engine(6).htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 本次chrono Engine使用方法</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="chronoEngine_7">
+					<br>即時戰鬥(7)[Chrono Engine]<br>
+						<object data="https://www.youtube.com/v/b0x3CTSYaCo"
+						width="800px" height="450px" ></object>						
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/Chrono Engine(7).htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 本次chrono Engine使用方法</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+
+					
+			</center>
+
+			<center style="font-size: 26px">☆事件教學<br>
+					<div style="float: none;" id="showText_event"><br>顯示文字<br>
+						<object data="https://www.youtube.com/v/Ay3Hvlal3YE"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/顯示文字-Text code.htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 Text Code</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="showChoise_event"><br>顯示選擇<br>
+						<object data="https://www.youtube.com/v/krfcLdR8vgE"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="inputNumber_event"><br>輸入數字<br>
+						<object data="https://www.youtube.com/v/5u5MLlL8epU"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="selectChoice_event"><br>選擇項目<br>
+						<object data="https://www.youtube.com/v/d_O6yog8Tw4"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="showRollingText_event"><br>顯示滾動文字<br>
+						<object data="https://www.youtube.com/v/oZc98CP779g"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="switch_selfswitch_event"><br>控制開關&自開關<br>
+						<object data="https://www.youtube.com/v/VGRziNcZXLc"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="variable_event"><br>控制變數<br>
+						<object data="https://www.youtube.com/v/7ZKxXXEsptI"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="timer_event"><br>控制定時器<br>
+						<object data="https://www.youtube.com/v/Z3BOacBYg3E"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="branch_event"><br>條件分支<br>
+						<object data="https://www.youtube.com/v/Xfgl70dnSIE"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+					<div style="float: none;" id="loop_event"><br>迴圈<br>
+						<object data="https://www.youtube.com/v/sX36QmHrrAA"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">						
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+					</div>
+
+			</center>	
+
+			<center style="font-size: 26px">☆腳本處理事件教學<br>
+				<div style="float: none;" id="showText_script"><br>顯示文字<br>
+						<object data="https://www.youtube.com/v/A1CsQ7rg0zY"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/腳本-顯示文字.htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 腳本-顯示文字</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+				</div>
+				<div style="float: none;" id="showChoice_script"><br>顯示選擇<br>
+						<object data="https://www.youtube.com/v/iRxkGwXyfN4"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/腳本-顯示選項.htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 腳本-顯示選擇</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+				</div>
+				<div style="float: none;" id="inputNumber_script"><br>輸入數字<br>
+						<object data="https://www.youtube.com/v/4q-zkiry7Q0"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/腳本-輸入數字.htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 腳本-輸入數字</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+				</div>
+				<div style="float: none;" id="setChoice_script"><br>選擇項目<br>
+						<object data="https://www.youtube.com/v/aipZqzcNWRM"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/腳本-選擇項目.htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 腳本-選擇項目</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+				</div>
+				<div style="float: none;" id="showRollingText_script"><br>顯示滾動文字<br>
+						<object data="https://www.youtube.com/v/_Yba7snQ4JI"
+						width="800px" height="450px" ></object>									
+						<p style="text-align: right; font-size: 15px">
+						<a href="相關檔案/腳本-顯示滾動文字.htm" style="text-decoration: none;
+						float: left;"
+						target="_blank">
+						 &#160 腳本-顯示滾動文字</a>
+						<a href="#_index" style="text-decoration: none;">
+						↪回到頁首 &#160</a></p>
+				</div>
+			</center>
+
+		</div>
+
+	</div>
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script>
+	function main() {
+	  	$('.box').hide();
+	  	$('.box').fadeIn(1000);
+	  
+	  	$('.showList').hide();
+	  
+	  	$('.list').on('click', function() {
+			$(this).next().slideToggle(400);
+	    	$(this).toggleClass('active');	    	
+		});
+	}
+
+$(document).ready(main);
+</script>
+</body>
+</html>

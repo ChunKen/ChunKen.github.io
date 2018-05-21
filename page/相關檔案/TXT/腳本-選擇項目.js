@@ -1,0 +1,1 @@
+$gameMessage.setItemChoice(var, n);   //var:存取變數值,n:物品種類ID
